@@ -1,0 +1,11 @@
+Where was I?
+
+PIT (Pittsburgh International Airport)
+
+What warnings?
+
+NAS IMSI identity request detected, however it was within the first 150 packets of this analysis. If you just turned your device on, this is likely a false-positive.
+
+Which hardware?
+
+Orbic with functional Google Fi sim

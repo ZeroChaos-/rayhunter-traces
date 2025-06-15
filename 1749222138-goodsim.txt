@@ -1,0 +1,12 @@
+Where was I?
+
+In the air between PIT and MCO, approximately 20 minutes before landing at MCO
+
+What warnings?
+
+NAS IMSI identity request detected, however it was within the first 150 packets of this analysis. If you just turned your device on, this is likely a false-positive.
+RRCConnectionRelease CarrierInfo: Eutra(ARFCN_ValueEUTRA(700))
+
+Which hardware?
+
+Orbic with functional Google Fi sim
