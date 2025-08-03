@@ -1,0 +1,14 @@
+Where was I?
+
+At my Karate Dojo, just arriving.  Quite close to nearby major highway.
+
+What warnings?
+
+7/26/25, 10:47:48 AM EDT	IMSI Requested v0	NAS IMSI identity request detected (packet 1408)	
+
+Which hardware?
+
+Orbic with functional Google Fi sim
+
+What version?
+0.4.0
