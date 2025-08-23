@@ -1,0 +1,6 @@
+import json
+
+with open('device_list.json') as f:
+    d = json.load(f)
+    print(d)
+    print(d['d081b5cc']['name'])
