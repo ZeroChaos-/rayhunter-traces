@@ -10,4 +10,4 @@ FROM alpine:latest AS runner
 COPY --from=unpacker /rayhunter /rayhunter
 COPY . /rayhunter/rayhunter-traces
 WORKDIR /rayhunter
-CMD ["rayhunter-check -p rayhunter-traces"]
+RUN ./rayhunter-check -p rayhunter-traces
