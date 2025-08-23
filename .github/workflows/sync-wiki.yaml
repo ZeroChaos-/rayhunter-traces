@@ -21,10 +21,10 @@ jobs:
         with:
           platforms: linux/amd64
           push: false
-      -
-        name: Upload Documentation to Wiki
-        uses: SwiftDocOrg/github-wiki-publish-action@v1
-        with:
-          path: "RayHunter-Traces-Wiki"
-        env:
-          GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+      #-
+      #  name: Upload Documentation to Wiki
+      #  uses: SwiftDocOrg/github-wiki-publish-action@v1
+      #  with:
+      #    path: "RayHunter-Traces-Wiki"
+      #  env:
+      #    GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
