@@ -1,0 +1,2 @@
+twice Identity (IMSI or IMEI) requested in suspicious manner v2	Disconnected after Identity Request without Auth Accept (frame 127643)	
+At least one of these was at a local restaurant which was an obvious ICE target.
