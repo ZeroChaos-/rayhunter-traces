@@ -30,7 +30,6 @@ jobs:
           push: false
       -
         name: Upload Documentation to Wiki
-        uses: actions/checkout@v1
         uses: SwiftDocOrg/github-wiki-publish-action@v1
         with:
           path: "RayHunter-Traces-Wiki"
