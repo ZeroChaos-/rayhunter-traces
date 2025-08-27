@@ -18,6 +18,16 @@ jobs:
         with:
           platforms: linux/amd64
           push: false
+      -
+        name: List added files
+        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
+      - 
+        name: rayhunter-check
+        run: |
+          sudo docker buildx create --bootstrap --use --name buildkit \
+            --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=-1 \
+            --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=-1
+          sudo docker buildx build --progress plain .
       #-
       #  name: Upload Documentation to Wiki
       #  uses: SwiftDocOrg/github-wiki-publish-action@v1
