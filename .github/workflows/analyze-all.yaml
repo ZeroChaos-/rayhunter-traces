@@ -19,7 +19,9 @@ jobs:
         name: run rayhunter-check
         run: |
           mkdir pages
-          sudo for i in *.qmdl; do docker run -v ${i}:/rayhunter/${i} rfhs/rayhunter-check:latest ${i} > pages/${i/.qmdl}.md; done
+          for i in *.qmdl; do
+            sudo docker run -t -v "${i}:/rayhunter/${i}" rfhs/rayhunter-check:latest "${i}" > "pages/${i/.qmdl}.md"
+          done
       -
         name: Upload Documentation to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
