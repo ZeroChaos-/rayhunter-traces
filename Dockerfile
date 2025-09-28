@@ -1,8 +1,8 @@
 ARG arch="linux-x64"
 
 FROM alpine:latest AS unpacker
-ARG version="0.6.1"
-ARG checksum="sha256:0fbbd518c0606b1a233127c110fba3de62d1502e4cb9eeccdd5624c83bd31d62"
+ARG version="0.7.0"
+ARG checksum="sha256:115ec95763fbd1314c9a540af45d51a784f95d4750e9361d1daabd7c9f189b28"
 ARG arch
 ADD --checksum=$checksum https://github.com/EFForg/rayhunter/releases/download/v$version/rayhunter-v$version-${arch}.zip /
 RUN apk add --no-cache unzip
