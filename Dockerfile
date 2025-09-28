@@ -16,4 +16,5 @@ COPY --from=unpacker /rayhunter/rayhunter-check-${arch}/rayhunter-check /rayhunt
 #COPY . /rayhunter/rayhunter-traces
 WORKDIR /rayhunter
 RUN ["./rayhunter-check", "--help"]
+RUN ["./rayhunter-check", "--version"]
 CMD ["./rayhunter-check", "-p", "rayhunter-traces"]

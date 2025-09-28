@@ -22,12 +22,16 @@ jobs:
         name: List added files
         run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
       - 
-        name: rayhunter-check
+        name: build rayhunter-check
         run: |
           sudo docker buildx create --bootstrap --use --name buildkit \
             --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=-1 \
             --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=-1
             sudo docker buildx build -t rayhunter-check:latest --progress plain .
+      - 
+        name: did we rayhunter-check?
+        run: |
+          sudo docker images
       -
         name: run rayhunter-check
         run: |
