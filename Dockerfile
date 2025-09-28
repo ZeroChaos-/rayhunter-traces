@@ -13,7 +13,7 @@ RUN mv rayhunter-v$version-linux-x64 rayhunter
 FROM scratch AS runner
 ARG arch
 COPY --from=unpacker /rayhunter/rayhunter-check-${arch}/rayhunter-check /rayhunter/rayhunter-check
-COPY . /rayhunter/rayhunter-traces
+#COPY . /rayhunter/rayhunter-traces
 WORKDIR /rayhunter
 RUN ["./rayhunter-check", "--help"]
-RUN ["./rayhunter-check", "-p", "rayhunter-traces"]
+CMD ["./rayhunter-check", "-p", "rayhunter-traces"]
